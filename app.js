@@ -13,7 +13,7 @@ const theirGuess = document.getElementById("whatTheyGuess");
 let tries = 3;
 
 
-let randomNumber = Math.floor(Math.random() * 10);;
+let randomNumber = Math.floor(Math.random() * 20);;
 
 
 
@@ -52,10 +52,14 @@ button.addEventListener('click', () => {
         image.src="https://i.imgflip.com/1l5w3f.jpg";
         
         document.getElementById('button').disabled = true;
-      };
+    };
+       if (theirGuess > '20') {
+           guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
+       }
 
- // create reduce count function 
- // if count =0 , disable button
-    
+        if (theirGuess < '1') {
+            guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
+        }
+
     
 });
