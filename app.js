@@ -53,13 +53,13 @@ button.addEventListener('click', () => {
         
         document.getElementById('button').disabled = true;
     };
-       if (theirGuess > '20') {
-           guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
-       }
+    //    if (theirGuess > '20') {
+    //        guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
+    //    }
 
-        if (theirGuess < '1') {
-            guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
-        }
+    //     if (theirGuess < '1') {
+    //         guessLowOrHigh.textContent = 'Please enter a number between 1 and 20.'
+    //     }
 
     
 });
