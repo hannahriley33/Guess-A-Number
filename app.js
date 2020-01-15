@@ -10,18 +10,19 @@ const guessLowOrHigh = document.getElementById("highOrLow");
 const theirGuess = document.getElementById("whatTheyGuess");
 
 // Initialize State
-let tries = 4;
+let tries = 3;
 
-let randomNumber = 5;
-//Math.floor(Math.random() * 10);
+
+let randomNumber = Math.floor(Math.random() * 10);;
+
+
 
 // User Interaction
 button.addEventListener('click', () => {
-   // State Change
+  
+    // State Change
     tries --;
     attemptCount.textContent = tries;
-
-   
 
       
     const compareResult = compareNumbers(Number(theirGuess.value), randomNumber);
@@ -29,10 +30,11 @@ button.addEventListener('click', () => {
   
     // Update DOM
     if (compareResult === 0) {
-        guessLowOrHigh.textContent = 'Correct!';
+        guessLowOrHigh.textContent = 'Congratulations! You guessed the magic number!';
         
-        image.src="https://www.modernman.com/wp-content/uploads/2017/09/635820385849834826-477057486_Nwc9fGvgEnzm6z71XMtCpAV3o1_500.png";
-   // document.getElementById('button').disabled = true;
+        image.src="https://compote.slate.com/images/02dd6ec5-4eee-416f-864e-b610aaade2ac.jpg";
+        
+        document.getElementById('button').disabled = true;
 
     };
 
@@ -44,10 +46,13 @@ button.addEventListener('click', () => {
         guessLowOrHigh.textContent = 'Your guess is too high';
     };
 
-    // if (tries === 0) {
-    //     return 'Guesses are up. You lose';
-    // }
-  
+      if (tries === 0) {
+        guessLowOrHigh.textContent = 'You guessed wrong too many times. Game over.'
+        
+        image.src="https://i.imgflip.com/1l5w3f.jpg";
+        
+        document.getElementById('button').disabled = true;
+      };
 
  // create reduce count function 
  // if count =0 , disable button
