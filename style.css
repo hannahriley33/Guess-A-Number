@@ -29,6 +29,7 @@ body {
 #img {
     height: 100px;
     width: 200px;
+    transition: width 4s, height 4s;
 }
 
 p {
@@ -38,7 +39,14 @@ p {
 
 #button {
     font-size: 13px;
+    cursor: pointer;
+    transition: 0.5s;
     
+}
+
+#button:hover {
+    background-color: gold;
+
 }
 
 #whatTheyGuess {
@@ -51,4 +59,8 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     
+}
+
+#guessesRemaining {
+    font-size: 14px;
 }
