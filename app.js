@@ -12,7 +12,7 @@ const theirGuess = document.getElementById("whatTheyGuess");
 
 
 // Initialize State
-let tries = 3;
+let tries = 4;
 
 
 let randomNumber = Math.floor(Math.random() * 20);;
@@ -27,7 +27,7 @@ button.addEventListener('click', () => {
         return;
     }
 
-    if (theirGuess > '20') {
+    if (Number(theirGuess.value) > 20) {
         alert ('Please enter a number between 1 and 20.')
         return; 
     }
