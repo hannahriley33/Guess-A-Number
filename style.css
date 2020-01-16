@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/575d71268259b5bbefd19284/1528842331891-REIFCK25KKKL5MVYMOYH/ke17ZwdGBToddI8pDm48kI6UKPR5DTo1APl200R1gT5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwCGDhvccXf3RLWH7jsf0D5FW0KXwhl9EBjIy2MrF8pTxNalUmrRYROf3rgMgo0HwI/scranton.jpg?format=2500w"); */
+    background-size: 100%;
+    color: maroon;
+   
+}
+
+#backgroundPic {
+    opacity: 0.6;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+
+}
+
+#img {
+    height: 100px;
+    width: 200px;
+    transition: width 4s, height 4s;
+}
+
+p {
+    
+    font-size: 18px;
+}
+
+#button {
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+#button:hover {
+    background-color: gold;
+
+}
+
+#whatTheyGuess {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+   
+}
+
+#highOrLow {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+}
+
+#guessesRemaining {
+    font-size: 14px;
+}

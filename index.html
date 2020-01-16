@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <img id="backgroundPic" src="https://img.nbc.com/mpx-static/image/277/338/181210_3843632_Golden_Ticket_anvver_1.jpg">
+    <h1>Number Guessing Game</h1>
+    <div>
+        <p id="words">How to Play: Guess the magic number between 1 and 20 to reveal your prize. You get 3 chances.</p>
+        <img src="https://acdn.list25.com/wp-content/uploads/2017/07/Michael-scott-quotes.jpg" id="img">
+    </div>
+    <div>
+        <p>Guess here: </p><input type="number" id="whatTheyGuess"></input>
+        <!-- <button aria-label="Whats up!" data-balloon-pos="right">Hover me!</button> -->
+        <button type="button" id="button">Submit</button>
+        <br>
+        <br>
+       <span id="highOrLow"></span> 
+
+        <p id="guessesRemaining">Guesses remaining: <span id="remainingGuesses">3</span></p>
+        <span id="result"></span>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
